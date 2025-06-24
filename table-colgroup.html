@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <title>table</title>
+        <style>
+            table,th,td{
+                border:2px solid black;
+                border collapse:collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <colgroup>
+                <col span="1">
+                <!--<col span="2" style="background-color:skyblue;">-->
+                <col span="2" style="visibility:collapse;">
+            </colgroup>
+            <tr>
+                <th>name</th>
+                <th>branch</th>
+                <th>marks</th>
+            </tr>
+            <tr>
+                <td>james</td>
+                <td>cs</td>
+                <td>82</td>
+            </tr>
+            <tr>
+                <td>george</td>
+                <td>ce</td>
+                <td>75</td>
+            </tr>
+            <tr>
+                <td>david</td>
+                <td>ee</td>
+                <td>78</td>
+            </tr>
+        </table>
+    </body>
+</html>
