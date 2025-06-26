@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+    <head>
+        <title>html forms</title>
+    </head>
+    <body>
+        <p>enter details</p>
+        <form action="/action_page.php" autocomplete="on">
+            <fieldset>
+                <legend>personal info</legend>
+            <label for="fname">first name:</label><br>
+            <input type="text" id="fname" name="fname" value="george"><br>
+            <label for="lname">last name:</label><br>
+            <input type="text" id="lname" name="lname" value="doe">
+            <input type="submit" value="submit">
+            </fieldset>
+        </form>
+        <p>enter the above details carefully</p>
+        <p>enter the favorite subject</p>
+        <form action="/action_page.php" target="blank">
+            <input type="radio" id="DSA" name="fav_subject" value="DSA">
+            <label for="DSA">DSA</label><br>
+            <input type="radio" id="OOPS" name="fav_subject" value="OOPS">
+            <label for="OOPS">OOPS</label><br>
+            <input type="checkbox" id="DCCN" name="fav_subject" value="DCCN">
+            <label for="DCCN">data communication and computer network</label><br>
+            <input type="submit" value="submit"><br>
+            <label for="cars">choose a car</label>
+            <select id="cars" name="cars" size="2">
+                <option value="baleno">baleno</option>
+                <option value="i20">i20</option>
+                <option value="venue">venue</option>
+            </select><br>
+            <textarea name="message" rows="10" cols="30">
+                dorris wants to meet his friends
+            </textarea><br>
+            <input list="shapes">
+            <datalist id="shapes">
+                <option value="circle">
+                <option value="triangle"></option>
+                <option value="cube">
+            </datalist>
+        </form>
+        <form action="/action_page.php"
+            oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            0
+            <input type="range" id="a" name="a" value="20">
+            80 +
+            <input type="number" id="b" name="b" value="20">
+            =
+            <output name="x" for="a b"></output><br>
+            <input type="submit">
+        </form>
+    </body>
+</html>
