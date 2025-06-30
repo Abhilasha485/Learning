@@ -9,9 +9,9 @@
             <fieldset>
                 <legend>personal info</legend>
             <label for="fname">first name:</label><br>
-            <input type="text" id="fname" name="fname" value="george"><br>
+            <input type="text" id="fname" name="fname" value="george" readonly><br>
             <label for="lname">last name:</label><br>
-            <input type="text" id="lname" name="lname" value="doe">
+            <input type="text" id="lname" name="lname" value="doe" disabled>
             <input type="submit" value="submit">
             </fieldset>
         </form>
@@ -24,7 +24,8 @@
             <label for="OOPS">OOPS</label><br>
             <input type="checkbox" id="DCCN" name="fav_subject" value="DCCN">
             <label for="DCCN">data communication and computer network</label><br>
-            <input type="submit" value="submit"><br>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset"><br>
             <label for="cars">choose a car</label>
             <select id="cars" name="cars" size="2">
                 <option value="baleno">baleno</option>
@@ -49,7 +50,15 @@
             <input type="number" id="b" name="b" value="20">
             =
             <output name="x" for="a b"></output><br>
-            <input type="submit">
+            <input type="submit"><br>
+            <label for="birthday">birthday:</label>
+            <input type="date" id="birthday" name="birthday"><br>
+            <label for="quantity">quantity</label>
+            <input type="number" id="quantity" name="quantity" min="0" max="10"
+            placeholder="1-2"
+            pattern="[0-9]{1}-[0-9]{1}"><br>
+            <label for="files">files</label>
+            <input type="file" id="files" name="files" multiple>
         </form>
     </body>
 </html>
