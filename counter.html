@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <title>counter</title>
+        <style>
+            body{
+                counter-reset:chapter;
+            }
+            h2::before{
+                counter-increment:chapter;
+                counter:"chapter" counter(chapter);
+            }
+        </style>
+    </head>
+    <body>
+        <h2>poem</h2>
+        <h2>stories</h2>
+        <h2>articles</h2>
+    </body>
+</html>

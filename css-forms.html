@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <title>forms</title>
+        <style>
+            input [type=text], select{
+                padding:25px;
+                border:2px solid pink;
+            }
+            div{
+                background-color:lightcyan;
+                padding:20px;
+                border:2px solid pink;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <form action="/action_page.php">
+                <label for="fname">first name</label>
+                <input type="text" id="fname" name="firstname" placeholder="your name">
+                <label for="lname">last name</label>
+                <input type="text" id="lname" name="lastname" placeholder="your last name">
+            </form>
+        </div>
+    </body>
+</html>
